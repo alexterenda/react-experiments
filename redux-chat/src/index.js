@@ -30,6 +30,9 @@ const reducers = combineReducers({
   selectedChannel: identityReducer, //selectedChannelReducer
 });
 
+const middleware = applyMiddleware(reduxPromise, logger);
+const store = createStore(reducers, initialState, middleware);
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
