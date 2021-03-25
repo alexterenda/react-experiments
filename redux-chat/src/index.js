@@ -9,7 +9,26 @@ import "./index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+// Reducers
+//Import messages reducer and selected channel reducer
+
 const identityReducer = (state = null) => state;
+
+const initialState = {
+  messages: [],
+  channels: ["general", "react", "paris"],
+  currentUser:
+    prompt("What is your username?") ||
+    `anonymous${Math.floor(10 + Math.random() * 90)}`,
+  selectedChannel: "general",
+};
+
+const reducers = combineReducers({
+  messages: identityReducer, // messagesReducer
+  channels: identityReducer,
+  currentUser: identityReducer,
+  selectedChannel: identityReducer, //selectedChannelReducer
+});
 
 ReactDOM.render(
   <React.StrictMode>
