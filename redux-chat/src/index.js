@@ -1,8 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import { createStore, combineReducers, applyMiddleware } from "redux";
+import logger from "redux-logger";
+import reduxPromise from "redux-promise";
+
 import "./index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+
+const identityReducer = (state = null) => state;
 
 ReactDOM.render(
   <React.StrictMode>
