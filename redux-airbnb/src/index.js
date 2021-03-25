@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import { createStore, combineReducers, applyMiddleware } from "redux";
+import { createStore, combineReducers, applyMiddleware, compose } from "redux";
 import { logger } from "redux-logger";
 import reduxPromise from "redux-promise";
 
@@ -17,7 +17,8 @@ const reducers = combineReducers({
   selectedFlat: selectedFlatReducer,
 });
 
-const middleware = applyMiddleware(logger, reduxPromise);
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const middleware = composeEnhancers(applyMiddleware(logger, reduxPromise));
 
 ReactDOM.render(
   <React.StrictMode>
