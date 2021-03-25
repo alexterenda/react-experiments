@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import { createStore, combineReducers } from "redux";
+import { createStore, combineReducers, applyMiddleware } from "redux";
+import { logger } from "redux-logger";
 
 import "./index.scss";
 import App from "./App";
@@ -15,9 +16,11 @@ const reducers = combineReducers({
   selectedFlat: selectedFlatReducer,
 });
 
+const middleware = applyMiddleware(logger);
+
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={createStore(reducers)}>
+    <Provider store={createStore(reducers, {}, middleware)}>
       <App />
     </Provider>
     ,
