@@ -17,7 +17,7 @@ const reducers = combineReducers({
   selectedFlat: selectedFlatReducer,
 });
 
-const middleware = applyMiddleware(logger);
+const middleware = applyMiddleware(logger, reduxPromise);
 
 ReactDOM.render(
   <React.StrictMode>
