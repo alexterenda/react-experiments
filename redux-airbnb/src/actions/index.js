@@ -1,16 +1,13 @@
 import flats from "../flats";
 
 export function setFlats() {
-  return fetch(
+  const promise = fetch(
     "https://raw.githubusercontent.com/lewagon/flats-boilerplate/master/flats.json"
-  )
-    .then((response) => response.json())
-    .then((data) => {
-      return {
-        type: "SET_FLATS",
-        payload: data,
-      };
-    });
+  ).then((response) => response.json());
+  return {
+    type: "SET_FLATS",
+    payload: promise,
+  };
 }
 
 export function selectFlat(flat) {
