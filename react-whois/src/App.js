@@ -10,9 +10,11 @@ const App = () => {
   const [domainData, setDomainData] = useState([]);
 
   const url = `https://otx.alienvault.com/otxapi/indicator/domain/whois/${domain}`;
+  const domainRegex = `/(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]/g`;
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     fetchData();
   };
 
@@ -22,16 +24,11 @@ const App = () => {
     setDomainData(responseObject['data']);
   };
 
-  useEffect(() => {
-    if (domain !== '') {
-      fetchData();
-    }
-  }, []);
-
   return (
     <div>
       <Form handleSubmit={handleSubmit} domain={domain} setDomain={setDomain} />
-      <Table domainData={domainData} />
+
+      {domainData !== [] && <Table domainData={domainData} />}
     </div>
   );
 };
