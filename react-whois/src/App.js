@@ -4,24 +4,25 @@ import './App.css';
 
 const App = () => {
   const [domain, setDomain] = useState('');
+  const [domainData, setDomainData] = useState({});
 
   const url = `https://otx.alienvault.com/otxapi/indicator/domain/whois/${domain}`;
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(domain);
-    fetchInfo();
+    fetchData();
   };
 
-  const fetchInfo = async () => {
+  const fetchData = async () => {
     const response = await fetch(url);
     const responseJSON = await response.json();
     console.log(responseJSON);
   };
 
-  useEffect(() => {
-    fetchInfo();
-  }, []);
+  // useEffect(() => {
+  //   fetchData();
+  // }, []);
 
   return (
     <div>
