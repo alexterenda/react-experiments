@@ -4,7 +4,7 @@ import './App.css';
 
 const App = () => {
   const [domain, setDomain] = useState('');
-  const [domainData, setDomainData] = useState({});
+  const [domainData, setDomainData] = useState([]);
 
   const url = `https://otx.alienvault.com/otxapi/indicator/domain/whois/${domain}`;
 
@@ -16,13 +16,16 @@ const App = () => {
 
   const fetchData = async () => {
     const response = await fetch(url);
-    const responseJSON = await response.json();
-    console.log(responseJSON);
+    const responseObject = await response.json();
+    setDomainData(responseObject);
+    console.log(domainData);
   };
 
-  // useEffect(() => {
-  //   fetchData();
-  // }, []);
+  useEffect(() => {
+    if (domain !== '') {
+      fetchData();
+    }
+  }, []);
 
   return (
     <div>
