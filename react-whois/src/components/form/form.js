@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Form = ({ onSubmit, onChange }) => {
+const Form = ({ handleSubmit, domain, setDomain }) => {
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={handleSubmit}>
       <div>
         <label htmlFor='domain'>Domain : </label>
         <input

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import Table from './components/table/table.js';
+import Form from './components/form/form.js';
 
 import './App.css';
 
@@ -29,19 +30,7 @@ const App = () => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor='domain'>Domain : </label>
-          <input
-            type='text'
-            id='domain'
-            name='domain'
-            value={domain}
-            onChange={(e) => setDomain(e.target.value)}
-          />
-        </div>
-        <button type='submit'>Submit</button>
-      </form>
+      <Form handleSubmit={handleSubmit} domain={domain} setDomain={setDomain} />
       <Table domainData={domainData} />
     </div>
   );
