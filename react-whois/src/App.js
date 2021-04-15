@@ -10,7 +10,6 @@ const App = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(domain);
     fetchData();
   };
 
@@ -18,7 +17,6 @@ const App = () => {
     const response = await fetch(url);
     const responseObject = await response.json();
     setDomainData(responseObject['data']);
-    console.log(domainData);
   };
 
   useEffect(() => {
