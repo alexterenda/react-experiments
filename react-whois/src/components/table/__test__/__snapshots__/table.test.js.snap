@@ -1,0 +1,284 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<table
+  data-testid="table"
+>
+  <thead>
+    <tr>
+      <th>
+        Record
+      </th>
+      <th>
+        Value
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Address
+      </td>
+      <td>
+        10 Corporate Drive Suite 300
+      </td>
+    </tr>
+    <tr>
+      <td>
+        City
+      </td>
+      <td>
+        Burlington
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Country
+      </td>
+      <td>
+        US
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Creation Date
+      </td>
+      <td>
+        Fri, 01 Jul 1994 00:00:00 GMT
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Creation Date
+      </td>
+      <td>
+        Fri, 01 Jul 1994 04:00:00 GMT
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Dnssec
+      </td>
+      <td>
+        unsigned
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Domain Name
+      </td>
+      <td>
+        DOMAIN.COM
+      </td>
+    </tr>
+    <tr>
+      <td>
+         Emails
+      </td>
+      <td>
+        dtransfers@registerapi.com
+      </td>
+    </tr>
+    <tr>
+      <td>
+         Emails
+      </td>
+      <td>
+        jason@endurance.com
+      </td>
+    </tr>
+    <tr>
+      <td>
+         Emails
+      </td>
+      <td>
+        mike.chattan@endurance.com
+      </td>
+    </tr>
+    <tr>
+      <td>
+         Emails
+      </td>
+      <td>
+        mark@endurance.com
+      </td>
+    </tr>
+    <tr>
+      <td>
+         Emails
+      </td>
+      <td>
+        linda.scott@endurance.com
+      </td>
+    </tr>
+    <tr>
+      <td>
+         Emails
+      </td>
+      <td>
+        joanna.krith@endurance.com
+      </td>
+    </tr>
+    <tr>
+      <td>
+         Emails
+      </td>
+      <td>
+        compliance@domain-inc.net
+      </td>
+    </tr>
+    <tr>
+      <td>
+         Emails
+      </td>
+      <td>
+        corpdomains@endurance.com
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Expiration Date
+      </td>
+      <td>
+        Thu, 07 Jan 2021 00:00:00 GMT
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Expiration Date
+      </td>
+      <td>
+        Thu, 07 Jan 2021 13:34:24 GMT
+      </td>
+    </tr>
+    <tr>
+      <td>
+         Name
+      </td>
+      <td>
+        Domain Administrator
+      </td>
+    </tr>
+    <tr>
+      <td>
+         Name Servers
+      </td>
+      <td>
+        NS-1250.AWSDNS-28.ORG
+      </td>
+    </tr>
+    <tr>
+      <td>
+         Name Servers
+      </td>
+      <td>
+        NS-166.AWSDNS-20.COM
+      </td>
+    </tr>
+    <tr>
+      <td>
+         Name Servers
+      </td>
+      <td>
+        NS-2022.AWSDNS-60.CO.UK
+      </td>
+    </tr>
+    <tr>
+      <td>
+         Name Servers
+      </td>
+      <td>
+        NS-683.AWSDNS-21.NET
+      </td>
+    </tr>
+    <tr>
+      <td>
+         Org
+      </td>
+      <td>
+        Endurance International Group West, Inc
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Referral Url
+      </td>
+      <td>
+        http://www.nic.ae
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Registrar
+      </td>
+      <td>
+        Domain.com, LLC
+      </td>
+    </tr>
+    <tr>
+      <td>
+        State
+      </td>
+      <td>
+        MA
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Status
+      </td>
+      <td>
+        clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Status
+      </td>
+      <td>
+        clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Status
+      </td>
+      <td>
+        clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Updated Date
+      </td>
+      <td>
+        Fri, 21 Oct 2016 00:00:00 GMT
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Updated Date
+      </td>
+      <td>
+        Fri, 21 Oct 2016 20:11:05 GMT
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Whois Server
+      </td>
+      <td>
+        whois.nic.ae
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Zipcode
+      </td>
+      <td>
+        01803
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;

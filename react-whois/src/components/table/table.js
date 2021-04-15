@@ -2,7 +2,7 @@ import React from 'react';
 
 const Table = ({ domainData }) => {
   return (
-    <table>
+    <table data-testid='table'>
       <thead>
         <tr>
           <th>Record</th>

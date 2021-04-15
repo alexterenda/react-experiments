@@ -22,6 +22,7 @@ const App = () => {
     const response = await fetch(url);
     const responseObject = await response.json();
     setDomainData(responseObject['data']);
+    console.log(domainData);
   };
 
   return (
